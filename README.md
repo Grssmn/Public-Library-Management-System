@@ -50,4 +50,4 @@ Screens: Each screen has a java class which operates its functions and methods a
 - Kordamp.ikonli for fonts and icons
 
 <h2>How To Compile and Run The Code</h2>
-Clone the repository onto your device. Once you have access to the directory, load it on IntelliJ IDEA run the "Login.java" file from the "BookManagementProject" folder. To access a SQL database, the localhost must be hosting a SQL database through phpMyAdmin (for example). Before running, add unto the admin table an admin account directly unto the SQL to be able to log in.
+Clone the repository onto your device. Once you have access to the directory, load it on IntelliJ IDEA run the "Login.java" file from the "BookManagementProject" folder. To access a SQL database, the localhost must be hosting a SQL database through phpMyAdmin (for example) compatible with the diagram given above. Before running, add unto the admin table an admin account directly unto the SQL to be able to log in.
