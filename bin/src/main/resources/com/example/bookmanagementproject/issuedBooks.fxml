@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" styleClass="login-form" stylesheets="@loginDesign.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bookmanagementproject.IssuedBooks">
+   <children>
+      <AnchorPane layoutY="46.0" prefHeight="360.0" prefWidth="508.0">
+         <children>
+            <TableView fx:id="issuedTable" fixedCellSize="40.0" layoutX="14.0" layoutY="15.0" prefHeight="331.0" prefWidth="480.0">
+               <columns>
+                  <TableColumn fx:id="col_username" prefWidth="120.0" text="Username" />
+                  <TableColumn fx:id="col_ISBN" prefWidth="105.0" text="ISBN" />
+                  <TableColumn fx:id="col_checkoutDate" minWidth="0.0" prefWidth="123.0" text="Checkout date" />
+                  <TableColumn fx:id="col_returnDate" minWidth="0.0" prefWidth="131.0" text="Return date" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="179.0" layoutY="14.0" text="Issued Books" textFill="WHITE">
+         <font>
+            <Font name="Cochin" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

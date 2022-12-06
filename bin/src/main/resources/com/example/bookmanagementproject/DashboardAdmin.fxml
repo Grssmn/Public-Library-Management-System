@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="986.0" styleClass="allBack" stylesheets="@dashboardAdmin.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bookmanagementproject.DashboardAdmin">
+   <children>
+      <Label layoutX="328.0" layoutY="45.0" text="Welcome Admin!" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cochin" size="45.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="63.0" layoutY="116.0" prefHeight="369.0" prefWidth="861.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="95.0" layoutY="32.0" prefHeight="100.0" prefWidth="671.0" spacing="40.0">
+               <children>
+                  <Button fx:id="users" mnemonicParsing="false" onAction="#usersPressed" prefHeight="63.0" prefWidth="135.0" styleClass="buttons" stylesheets="@dashboardAdmin.css" text="Users">
+                     <font>
+                        <Font name="Cochin" size="24.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon iconColor="#252d50" iconLiteral="fa-users" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="books" mnemonicParsing="false" onAction="#booksPressed" prefHeight="63.0" prefWidth="135.0" styleClass="buttons" stylesheets="@dashboardAdmin.css" text="Books">
+                     <font>
+                        <Font name="Cochin" size="24.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon iconColor="#252d50" iconLiteral="fa-book" />
+                     </graphic>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="95.0" layoutY="142.0" prefHeight="100.0" prefWidth="671.0" spacing="40.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Button fx:id="checkoutBook" mnemonicParsing="false" onAction="#checkoutPressed" prefHeight="63.0" prefWidth="200.0" styleClass="buttons" stylesheets="@dashboardAdmin.css" text="Checkout Book">
+                     <font>
+                        <Font name="Cochin" size="24.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon iconColor="#252d50" iconLiteral="fa-bookmark" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="returnBook" mnemonicParsing="false" onAction="#returnPressed" prefHeight="63.0" prefWidth="200.0" styleClass="buttons" stylesheets="@dashboardAdmin.css" text="Return Book">
+                     <font>
+                        <Font name="Cochin" size="24.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon iconColor="#252d50" iconLiteral="fa-caret-square-o-up" />
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="issuedBook" layoutX="331.0" layoutY="268.0" mnemonicParsing="false" onAction="#issuedPressed" prefHeight="63.0" prefWidth="200.0" styleClass="buttons" stylesheets="@dashboardAdmin.css" text="Issued Books">
+               <font>
+                  <Font name="Cochin" size="24.0" />
+               </font>
+               <graphic>
+                  <FontIcon iconColor="#252d50" iconLiteral="fa-dropbox" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="logout" layoutX="426.0" layoutY="513.0" mnemonicParsing="false" onAction="#logoutPressed" prefHeight="54.0" prefWidth="135.0" styleClass="buttons" stylesheets="@dashboardAdmin.css" text="Log out">
+         <font>
+            <Font name="Cochin" size="28.0" />
+         </font>
+         <graphic>
+            <FontIcon iconColor="#ff3636" iconLiteral="fa-mail-forward" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

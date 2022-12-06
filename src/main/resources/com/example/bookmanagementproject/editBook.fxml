@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" styleClass="login-form" stylesheets="@loginDesign.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bookmanagementproject.EditBook">
+   <children>
+      <Label layoutX="193.0" layoutY="6.0" text="Edit Book" textFill="WHITE">
+         <font>
+            <Font name="Cochin" size="28.0" />
+         </font>
+      </Label>
+      <VBox layoutX="168.0" layoutY="72.0" prefHeight="171.0" prefWidth="164.0" spacing="3.0">
+         <children>
+            <TextField fx:id="bookNameArea" alignment="CENTER" prefHeight="25.0" prefWidth="152.0" promptText="New Book Name" styleClass="textfield" stylesheets="@loginDesign.css">
+               <font>
+                  <Font name="Cochin" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="authorArea" alignment="CENTER" prefHeight="25.0" prefWidth="152.0" promptText="New Author" styleClass="textfield" stylesheets="@loginDesign.css">
+               <font>
+                  <Font name="Cochin" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ISBNArea" alignment="CENTER" prefHeight="25.0" prefWidth="152.0" promptText="New ISBN" styleClass="textfield" stylesheets="@loginDesign.css">
+               <font>
+                  <Font name="Cochin" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="categoryArea" alignment="CENTER" prefHeight="25.0" prefWidth="152.0" promptText="New Category" styleClass="textfield" stylesheets="@loginDesign.css">
+               <font>
+                  <Font name="Cochin" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="inventoryArea" alignment="CENTER" prefHeight="25.0" prefWidth="152.0" promptText="New Inventory" styleClass="textfield" stylesheets="@loginDesign.css">
+               <font>
+                  <Font name="Cochin" size="19.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <HBox layoutX="131.0" layoutY="251.0" prefHeight="35.0" prefWidth="239.0" spacing="40.0">
+         <children>
+            <Button fx:id="saveArea" mnemonicParsing="false" onAction="#updateBook" prefHeight="25.0" prefWidth="100.0" styleClass="login-save" stylesheets="@loginDesign.css" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Cochin" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelArea" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="100.0" styleClass="login-cancel" stylesheets="@loginDesign.css" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="Cochin" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Label layoutX="76.0" layoutY="39.0" text="You can leave the fields blank if you do not want to change them." textFill="WHITE" />
+   </children>
+</AnchorPane>
