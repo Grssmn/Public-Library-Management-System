@@ -35,10 +35,13 @@ Screens: Each screen has a java class which operates its functions and methods a
 </li>
   <li><strong>Create Users:</strong> any system that has users with distinct data sets has to be able to create new users, thus making use of our method which creates an object and saves its data into an SQL table
 </li>
+</ul>
 <h2>NEW Functionalities</h2>
+<ul>
   <li><strong>User Wishlist:</strong> Any user may add any book, with its author and category, to their wishlist. This list will be compiled into the SQL database to save the information. Administrators may access these wishlists and see which users are requesting each book.
 </li>
   <li><strong>Search Online:</strong> Administrators will have a button that allows the program to do a google search for any book that may have been wishlisted, in order to view available prices online.
+  </li>
 </ul>
 
 <h2>How To Compile and Run The Code</h2>
